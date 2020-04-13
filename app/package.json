@@ -1,0 +1,18 @@
+{
+  "name": "electron-react-app",
+  "productName": "electron-react-app",
+  "version": "1.0.0",
+  "description": "fast app starter ",
+  "main": "./dist/main.js",
+  "author": {
+    "name": "Amine Kaddache",
+    "email": "psj.amine@gmail.com",
+    "url": "https://github.com/electron-react-boilerplate"
+  },
+  "scripts": {
+    "electron-rebuild": "ts-node ../scripts/ElectronRebuild.ts",
+    "postinstall": "npm run electron-rebuild"
+  },
+  "license": "MIT",
+  "dependencies": {}
+}

@@ -1,0 +1,50 @@
+{
+  "compilerOptions": {
+    "plugins": [
+      {
+        "name": "typescript-tslint-plugin"
+      }
+    ],
+    "allowUnreachableCode": false,
+    "experimentalDecorators": true,
+    "jsx": "react",
+    "lib": [
+      "dom"
+    ],
+    "module": "commonjs",
+    "noFallthroughCasesInSwitch": true,
+    "strict": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "target": "ESNext",
+    "downlevelIteration": true,
+    // "esModuleInterop": true,
+    // "emitDecoratorMetadata": true
+
+    // https://www.typescriptlang.org/docs/handbook/compiler-options.html
+    // Enable incremental compilation by reading/writing information
+    // from prior compilations to a file on disk.
+    //  This file is controlled by the --tsBuildInfoFile flag.
+    // "incremental": true,
+    // "tsBuildInfoFile": "dev/tsconfig.tsbuildinfo",
+
+    // Have recompiles in ‘–incremental’ and ‘–watch’
+    // assume that changes within a file will only affect
+    //  files directly depending on it
+    //"assumeChangesOnlyAffectDirectDependencies": true
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "allowJs": true
+  },
+  "include": [
+    "app/src"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/node_modules",
+    "dist"
+  ]
+}
